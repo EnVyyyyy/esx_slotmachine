@@ -197,7 +197,7 @@ function Spin()
 	rand1 = EmojiList[math.random(#EmojiList)]
 	rand2 = EmojiList[math.random(#EmojiList)]
 	rand3 = EmojiList[math.random(#EmojiList)]
-	TriggerServerEvent('esx_slot:sv:1',money,rand1,rand2,rand3)
+	TriggerServerEvent('esx_slotmachine:sv:1',money,rand1,rand2,rand3)
 end
 function Chat(text,r,g,b)
 	title = ""
@@ -214,22 +214,22 @@ function Minus(a)
 	end
 	return money
 end
-RegisterNetEvent("esx_slot:1")
-AddEventHandler("esx_slot:1", function(MoneyRecive,a,b,c)
+RegisterNetEvent("esx_slotmachine:1")
+AddEventHandler("esx_slotmachine:1", function(MoneyRecive,a,b,c)
 	if a == b and a == c then
 		if a == '🍒' then
-			TriggerServerEvent('esx_slot:sv:2',MoneyRecive*price.line3.cherry)
+			TriggerServerEvent('esx_slotmachine:sv:2',MoneyRecive*price.line3.cherry)
 		elseif a == '🍋' then
-			TriggerServerEvent('esx_slot:sv:2',MoneyRecive*price.line3.lemon)
+			TriggerServerEvent('esx_slotmachine:sv:2',MoneyRecive*price.line3.lemon)
 		else
-			TriggerServerEvent('esx_slot:sv:2',MoneyRecive*price.line3.other)
+			TriggerServerEvent('esx_slotmachine:sv:2',MoneyRecive*price.line3.other)
 		end
 		Chat('^2WON:^0 '..a..' '..b..' '..c)
 	elseif a == b or b == c then
 		if b =='🍒' then
-			TriggerServerEvent('esx_slot:sv:2',MoneyRecive*price.line2.cherry)
+			TriggerServerEvent('esx_slotmachine:sv:2',MoneyRecive*price.line2.cherry)
 		else
-			TriggerServerEvent('esx_slot:sv:2',MoneyRecive*price.line2.other)
+			TriggerServerEvent('esx_slotmachine:sv:2',MoneyRecive*price.line2.other)
 		end
 		Chat('^2WON:^0 '..a..' '..b..' '..c)
 	else
