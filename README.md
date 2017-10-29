@@ -17,7 +17,7 @@ or
 
 2). Clone the repository
 ```
-https://github.com/EnVyyyyy/esx_slot.git
+https://github.com/EnVyyyyy/esx_slotmachine.git
 ```
 
 3). Add this in your server.cfg :
