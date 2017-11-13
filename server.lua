@@ -7,7 +7,7 @@ AddEventHandler('esx_slotmachine:sv:1', function(amount,a,b,c)
 	local source = source
 	local xPlayer = ESX.GetPlayerFromId(source)
 	amount = tonumber(amount)
-		if (xPlayer.getMoney() >= tonumber(amount)) then
+		if (xPlayer.getMoney() >= tonumber(amount)) or (xPlayer.getAccounts('black_money') >= tonumber(amount)) then
 		xPlayer.removeMoney(amount)
 		-- xPlayer.removeAccountMoney('black_money', (amount))
 		TriggerClientEvent("esx_slotmachine:1",source,tonumber(amount),tostring(a),tostring(b),tostring(c))
