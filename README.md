@@ -1,4 +1,4 @@
-# esx_slotmachine
+# esx_slotmachine FROM ENVYYYYYYYYY (i don't know how many "y" he have ahah) from ESX-Discord. Thanks to him
 FXServer esx_slotmachine
 
 By deafult the slots takes clean money, if you want it to take black money
