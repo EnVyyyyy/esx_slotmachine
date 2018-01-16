@@ -265,7 +265,7 @@ Citizen.CreateThread(function()
 		local pos = GetEntityCoords(GetPlayerPed(-1), false)
 		for k,v in ipairs(moneymachine_slot) do
 			if(Vdist(v.x, v.y, v.z, pos.x, pos.y, pos.z) < 20.0)then
-				DrawMarker(1, v.x, v.y, v.z - 1, 0, 0, 0, 0, 0, 0, 1.0001, 1.0001, 1.5001, 0, 25, 165, 165, 0,0, 0,0)
+				DrawMarker(27, v.x, v.y, v.z -0.9,0,0,0,0,0,0,2.001,2.0001,0.5001,0,155,255,200,0,0,0,0)
 				if(Vdist(v.x, v.y, v.z, pos.x, pos.y, pos.z) < 1.0)then
 					DisplayHelpText("Press ~INPUT_CONTEXT~   ~y~To play")
 						if IsControlJustPressed(1,input["E"]) then
